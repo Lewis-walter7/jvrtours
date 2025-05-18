@@ -9,7 +9,7 @@ export default function PlacesPage() {
         <p className="mt-2 text-lg">Discover Kenya’s iconic destinations</p>
       </header>
       <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <section className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {places.places.map((place) => (
             <div
               key={place.name}
