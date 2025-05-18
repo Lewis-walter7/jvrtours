@@ -1,0 +1,34 @@
+{
+    "places" : [
+  {
+    "name": "Masai Mara Migration Safari (4 Days)",
+    "description": "Witness the legendary Great Migration, spot the Big Five, and enjoy sundowners in the heart of Kenya's most famous reserve.",
+    "image": "maasaimara.png",
+    "rating": 4.8
+  },
+  {
+    "name": "Amboseli & Tsavo Combo (5 Days)",
+    "description": "Breathtaking views of Mount Kilimanjaro and red elephants of Tsavo in one scenic adventure.",
+    "image": "amboselli.png",
+    "rating": 4.5
+  },
+  {
+    "name": "Nairobi Day Tour",
+    "description": "Perfect for short stays — visit Nairobi National Park, the Giraffe Centre, Elephant Orphanage, and Karen Blixen Museum.",
+    "image": "nairobipark.png",
+    "rating": 4.2
+  },
+  {
+    "name": "Diani Beach Extension (3-5 Days)",
+    "description": "Unwind after your safari on Kenya's award-winning white-sand beaches with optional snorkeling or dhow cruises.",
+    "image": "diani.png",
+    "rating": 4.7
+  },
+  {
+    "name": "Cultural Immersion Experience",
+    "description": "Spend a day or two with local Maasai or Samburu communities — learn traditions, dance, and craft making in a respectful, guided setting.",
+    "image": "maasai.png",
+    "rating": 4.3
+  }
+]
+}
