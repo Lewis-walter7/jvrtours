@@ -49,7 +49,7 @@ export default function Footer() {
             <div className="space-y-2">
               <Link href="/about" className="block text-sm hover:text-cyan-400">• About us</Link>
               <Link href="/tours" className="block text-sm hover:text-cyan-400">• Our Tours</Link>
-              <Link href="/team" className="block text-sm hover:text-cyan-400">• Our Team</Link>
+              <Link href="/services" className="block text-sm hover:text-cyan-400">• Our Team</Link>
             </div>
             <button className="mt-4 bg-cyan-500 text-white px-6 py-2 rounded hover:bg-cyan-600">
               Get in touch
