@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <nav className="bg-blue-600 dark:bg-white  p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Image src="/image.png" alt='JVR Tours Company' width={300} height={100}/>
+        <Image src="/image.png" alt='JVR Tours Company' onClick={() => window.location.href = '/'} width={300} height={100} className='cursor-pointer'/>
           
         
         <div className="flex items-center space-x-4">

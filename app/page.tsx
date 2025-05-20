@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <div >
         <Hero />
-        <Testimonials />
         <PlacesPage />
+        <Testimonials />
         <AccordionLayout 
           handleClick={handleClick}
           isSomeActive={isSomeActive}

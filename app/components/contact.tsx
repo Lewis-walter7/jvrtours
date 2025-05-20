@@ -16,7 +16,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 mt-10 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-20 mt-10 sm:mb-28 w-[min(100%,38rem)] text-center mx-auto "
       initial={{
         opacity: 0,
       }}
@@ -32,10 +32,10 @@ export default function Contact() {
     >
       <SectionHeading>Contact us</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:lewisindusa@gmail.com">
-          lewisindusa@gmail.com
+      <p className="text-gray-700 -mt-6 ">
+        Please contact us directly at{" "}
+        <a className="underline" href="mailto:info@jvrtours.co.ke">
+          info@jvrtours.co.ke
         </a>{" "}
         or through this form.
       </p>
@@ -56,7 +56,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 px-4 rounded-lg borderBlack transition-all dark:outline-none"
           name="senderEmail"
           type="email"
           required
@@ -65,7 +65,7 @@ export default function Contact() {
           aria-label="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 rounded-lg borderBlack p-4 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required
