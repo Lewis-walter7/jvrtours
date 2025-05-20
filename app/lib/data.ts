@@ -1,3 +1,5 @@
+import { BiGlobe } from "react-icons/bi";
+
 export const links = [
   {
     name: "Home",
@@ -88,3 +90,36 @@ export const accordionData = [
       "We strongly recommend purchasing comprehensive travel insurance that covers health, trip cancellations, and emergencies."
   }
 ];
+
+ export const services = [
+    {
+      icon: BiGlobe,
+      title: "Personalized Matching",
+      description: "Our unique matching system lets you find just the tour you want for your next holiday.",
+    },
+    {
+      icon: BiGlobe,
+      title: "Wide Variety of Tours",
+      description: "We offer a wide variety of personally picked tours with destinations all over the globe.",
+    },
+    {
+      icon: BiGlobe,
+      title: "Highly Qualified Service",
+      description: "Our tour managers are qualified, skilled, and friendly to bring you the best service.",
+    },
+    {
+      icon: BiGlobe,
+      title: "24/7 Support",
+      description: "You can always get professional support from our staff 24/7 and ask any question you have.",
+    },
+    {
+      icon: BiGlobe,
+      title: "Handpicked Hotels",
+      description: "Our team offers only the best selection of affordable and luxury hotels to our clients.",
+    },
+    {
+      icon: BiGlobe,
+      title: "Best Price Guarantee",
+      description: "If you find tours that are cheaper than ours, we will compensate the difference.",
+    }
+  ];

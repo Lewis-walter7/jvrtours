@@ -14,7 +14,7 @@ export default function PlacesCarousel({ places }: PlacesCarouselProps) {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
@@ -24,7 +24,7 @@ export default function PlacesCarousel({ places }: PlacesCarouselProps) {
   return (
     <Slider {...settings}>
       {places.map((place) => (
-        <div key={place.name} className="px-2">
+        <div key={place.name} className="px-2 min-h-100">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <img
               src={place.image}
@@ -35,7 +35,7 @@ export default function PlacesCarousel({ places }: PlacesCarouselProps) {
             <div className="p-6">
               <h2 className="text-xl font-semibold text-gray-800">{place.name}</h2>
               <p className="mt-2 text-gray-600">{place.description}</p>
-              <div className="mt-4 flex items-center">
+              <div className="mt-4 flex items-center w-full">
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
@@ -49,6 +49,9 @@ export default function PlacesCarousel({ places }: PlacesCarouselProps) {
                   </svg>
                 ))}
                 <span className="ml-2 text-gray-600">{place.rating.toFixed(1)}</span>
+                <button className="ml-auto bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600">
+                  Read More
+                </button>
               </div>
             </div>
           </div>
