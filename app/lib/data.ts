@@ -132,12 +132,12 @@ export const accordionData = [
     subtitle: "With its exceptional natural beauty, Croatia’s first national park has always attracted nature lovers. Plitvice lakes, with its outstanding universal value, are inscribed onto the UNESCO World Heritage List.",
   },
   {
-    image: '/maasaimara.png',
+    image: '/lions.png',
     title: 'Explore the Wild',
     subtitle: 'Discover the hidden trails, crystal lakes, and wildlife of untouched forests.',
   },
   {
-    image: '/leopard.png',
+    image: '/leopard2.png',
     title: 'Journey into Nature',
     subtitle: 'Experience the ultimate getaway surrounded by breathtaking landscapes.',
   },
