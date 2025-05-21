@@ -4,11 +4,18 @@ import React from 'react'
 
 const AboutModal = () => {
     const aboutModal = useAboutUsModal()
+
+    const body = (
+      <div>
+        Hello
+      </div>
+    )
   return (
     <Modal 
         isOpen={aboutModal.isOpen}
         title='About Us'
         onClose={aboutModal.onClose}
+        body={body}
     />    
   )
 }

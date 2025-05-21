@@ -4,11 +4,18 @@ import React from 'react'
 
 const WhyChooseUsModal = () => {
   const whyChooseUsModal = useWhyChooseUsModal()
+
+  const body = (
+      <div>
+        Hello
+      </div>
+    )
   return (
     <Modal
       isOpen={whyChooseUsModal.isOpen}
       title='Why Choose Us'
       onClose={whyChooseUsModal.onClose}
+      body={body}
       />
   )
 }

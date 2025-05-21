@@ -1,5 +1,3 @@
-'use client';
-
 import GetQuote from "../components/modal/getQuote";
 import Terms from "./components/terms";
 
