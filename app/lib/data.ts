@@ -123,3 +123,22 @@ export const accordionData = [
       description: "If you find tours that are cheaper than ours, we will compensate the difference.",
     }
   ];
+
+
+  export const slides = [
+  {
+    image: '/giraffe.png',
+    title: 'The Heart of Kenya',
+    subtitle: "With its exceptional natural beauty, Croatia’s first national park has always attracted nature lovers. Plitvice lakes, with its outstanding universal value, are inscribed onto the UNESCO World Heritage List.",
+  },
+  {
+    image: '/maasaimara.png',
+    title: 'Explore the Wild',
+    subtitle: 'Discover the hidden trails, crystal lakes, and wildlife of untouched forests.',
+  },
+  {
+    image: '/leopard.png',
+    title: 'Journey into Nature',
+    subtitle: 'Experience the ultimate getaway surrounded by breathtaking landscapes.',
+  },
+];

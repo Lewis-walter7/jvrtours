@@ -10,6 +10,7 @@ import Contact from "./components/contact";
 import CTASection from "./components/CTAsection";
 import InfoModal from "./components/modal/InfoModal";
 import GetQuote from "./components/modal/getQuote";
+import Hero2 from "./components/hero2";
 
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
   };
   return (
     <div >
-        <Hero />
+        <Hero2 />
         <PlacesPage />
         <Testimonials />
         <AccordionLayout 

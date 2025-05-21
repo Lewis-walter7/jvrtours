@@ -66,7 +66,7 @@ export default function Footer() {
          </div>
           <div className="flex items-center space-x-4">
             <div className="flex space-x-4">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <a href="https://www.facebook.com/share/1AzbpGHxAF/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                 <FaFacebook size={20}/>
               </a>
               <a href="https://x.com/JvrLtd?t=NZLgovQKnObDPMe4y5D9gg&s=08" target="_blank" rel="noopener noreferrer" className="hover:text-white">
