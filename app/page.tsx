@@ -33,7 +33,7 @@ export default function Home() {
           turn={active}
           setTurn={setActive}
         />
-        <Contact />
+       
         <InfoModal />
         <GetQuote />
         <CTASection />
