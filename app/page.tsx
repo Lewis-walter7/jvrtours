@@ -8,6 +8,7 @@ import { accordionData } from "./lib/data";
 import PlacesPage from "./components/places";
 import Contact from "./components/contact";
 import CTASection from "./components/CTAsection";
+import InfoModal from "./components/modal/InfoModal";
 
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
           setTurn={setActive}
         />
         <Contact />
+        <InfoModal />
         <CTASection />
     </div>
   );

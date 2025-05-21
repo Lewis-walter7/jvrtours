@@ -1,9 +1,10 @@
 import { create } from 'zustand'
+import { Place } from '../models/place';
 
 interface useUploadModalProps{
     isOpen: boolean,
     onOpen: () => void,
-    onClose: () => void
+    onClose: () => void,
 }
 const useInfoModal = create<useUploadModalProps>((set) => ({
   isOpen: false,
@@ -12,7 +13,7 @@ const useInfoModal = create<useUploadModalProps>((set) => ({
   }),
   onClose: ()=> set({
     isOpen: false
-  }) 
+  })
 }))
 
 export default useInfoModal;

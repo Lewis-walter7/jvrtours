@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Place } from "../models/place";
+import useInfoModal from "../hooks/useInfoModal";
+import { usePlaceStore } from "../hooks/usePlaceStore";
 
 interface PlacesCarouselProps {
   places: Place[];
@@ -19,6 +21,13 @@ export default function PlacesCarousel({ places }: PlacesCarouselProps) {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
+  };
+
+  const infoModal = useInfoModal();
+  const { setSelectedPlace } = usePlaceStore();
+
+  const handleReadMore = (place: Place) => {
+    setSelectedPlace(place);
   };
 
   return (
@@ -49,7 +58,13 @@ export default function PlacesCarousel({ places }: PlacesCarouselProps) {
                   </svg>
                 ))}
                 <span className="ml-2 text-gray-600">{place.rating.toFixed(1)}</span>
-                <button className="ml-auto bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600">
+                <button className="ml-auto bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600"
+                  onClick={() => {
+                    handleReadMore(place);
+                    infoModal.onOpen()
+                    }
+                  }
+                >
                   Read More
                 </button>
               </div>
