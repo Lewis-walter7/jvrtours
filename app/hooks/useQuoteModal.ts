@@ -1,11 +1,11 @@
 import { create } from 'zustand'
-import { Place } from '../models/place';
+
 interface useUploadModalProps{
     isOpen: boolean,
     onOpen: () => void,
     onClose: () => void,
 }
-const useInfoModal = create<useUploadModalProps>((set) => ({
+const useQuoteModal = create<useUploadModalProps>((set) => ({
   isOpen: false,
   onOpen: ()=> set({
     isOpen: true
@@ -15,4 +15,4 @@ const useInfoModal = create<useUploadModalProps>((set) => ({
   })
 }))
 
-export default useInfoModal;
+export default useQuoteModal;

@@ -9,6 +9,7 @@ import PlacesPage from "./components/places";
 import Contact from "./components/contact";
 import CTASection from "./components/CTAsection";
 import InfoModal from "./components/modal/InfoModal";
+import GetQuote from "./components/modal/getQuote";
 
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
         />
         <Contact />
         <InfoModal />
+        <GetQuote />
         <CTASection />
     </div>
   );

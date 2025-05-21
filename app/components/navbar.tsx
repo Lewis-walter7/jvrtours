@@ -6,9 +6,11 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { FaClock } from 'react-icons/fa';
 import { BiPhone } from 'react-icons/bi';
+import useQuoteModal from '../hooks/useQuoteModal';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const quoteModal = useQuoteModal();
 
   return (
     <nav className="bg-blue-600 dark:bg-white  p-4">
@@ -50,16 +52,16 @@ export default function Navbar() {
             <h2 className='text-black'>+254702813866</h2> 
          </div>
          <div >
-           <Link
-                href="#contact"
+           <button
                 className="bn30"
                 onClick={() => {
+                  quoteModal.onOpen();
                     // setActiveSection("Contact");
                     // setTimeOfLastClick(Date.now());
                 }}
                 >
                 Get free quote
-            </Link>
+            </button>
          </div>
         </div>
       </div>

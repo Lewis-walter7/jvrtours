@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { BiMailSend, BiPhone } from 'react-icons/bi';
-import { BsGoogle, BsInstagram, BsTwitter } from 'react-icons/bs';
+import { BsGoogle, BsInstagram, BsTiktok, BsTwitter } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
 
 export default function Footer() {
@@ -66,16 +66,16 @@ export default function Footer() {
          </div>
           <div className="flex items-center space-x-4">
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-white">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                 <FaFacebook size={20}/>
               </a>
-              <a href="#" className="hover:text-white">
+              <a href="https://x.com/JvrLtd?t=NZLgovQKnObDPMe4y5D9gg&s=08" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                 <BsTwitter size={20}/>
               </a>
-              <a href="#" className="hover:text-white">
-                <BsGoogle size={20} />
+              <a href="tiktok.com/@jvr_tours" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                <BsTiktok size={20} />
               </a> 
-              <a href="#" className="hover:text-white">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                 <BsInstagram size={20} />
               </a> 
             </div>            
