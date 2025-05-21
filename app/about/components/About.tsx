@@ -1,5 +1,8 @@
 "use client";
 
+import useAboutUsModal from "@/app/hooks/useAboutUsModal";
+import useOurMissionModal from "@/app/hooks/useOurMissionModal";
+import useWhyChooseUsModal from "@/app/hooks/useWhyChooseUsModal";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -8,6 +11,9 @@ type TabKey = "about" | "why" | "mission";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
+  const whyChooseUsModal = useWhyChooseUsModal()
+  const aboutMOdal = useAboutUsModal()
+  const ourMissionModal = useOurMissionModal()
 
   const tabContent: Record<TabKey, string> = {
     about:
@@ -17,6 +23,16 @@ const About = () => {
     mission:
       "Our mission is to provide the ultimate travel planning experience while becoming a one-stop shop for every travel service available in the industry.",
   };
+
+  const handleClick = (tab: TabKey) => {
+      if(activeTab === "about") {
+        aboutMOdal.onOpen()
+      }else if(activeTab === "why") {
+        whyChooseUsModal.onOpen()
+      }else {
+        ourMissionModal.onOpen()
+      }
+  }
 
   return (
     <section className="flex flex-col md:flex-row mt-6 items-center w-[80%] mx-auto justify-center px-6 py-10 bg-white">
@@ -65,7 +81,9 @@ const About = () => {
           <button className="bg-teal-500 text-white px-6 py-2 rounded hover:bg-teal-600 transition">
             Get in Touch
           </button>
-          <button className="border border-gray-400 px-6 py-2 rounded text-gray-700 hover:bg-gray-100 transition">
+          <button className="border border-gray-400 px-6 py-2 rounded text-gray-700 hover:bg-gray-100 transition"
+            onClick={() => handleClick(activeTab)}
+          >
             Read More
           </button>
         </div>

@@ -4,7 +4,7 @@ interface useUploadModalProps{
     onOpen: () => void,
     onClose: () => void,
 }
-const useInfoModal = create<useUploadModalProps>((set) => ({
+const useAboutUsModal = create<useUploadModalProps>((set) => ({
   isOpen: false,
   onOpen: ()=> set({
     isOpen: true
@@ -14,4 +14,4 @@ const useInfoModal = create<useUploadModalProps>((set) => ({
   })
 }))
 
-export default useInfoModal;
+export default useAboutUsModal;

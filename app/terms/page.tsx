@@ -1,3 +1,6 @@
+'use client';
+
+import GetQuote from "../components/modal/getQuote";
 import Terms from "./components/terms";
 
 export const metadata = {
@@ -9,6 +12,7 @@ export default function TermsPage() {
   return (
     <div>
         <Terms />
+        <GetQuote />
     </div>
   );
 }

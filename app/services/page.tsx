@@ -1,3 +1,6 @@
+'use client';
+
+import GetQuote from "../components/modal/getQuote";
 import Service from "./components/Service";
 import TeamSection from "./components/Team";
 
@@ -12,6 +15,7 @@ export default function TermsPage() {
     <div>
         <Service />
         <TeamSection />
+        <GetQuote/>
     </div>
   );
 }
