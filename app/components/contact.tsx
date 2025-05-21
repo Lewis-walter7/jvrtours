@@ -9,13 +9,13 @@ import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  //const { ref } = useSectionInView("Contact");
   const formRef = useRef<HTMLFormElement>(null);
 
   return (
     <motion.section
       id="contact"
-      ref={ref}
+      //ref={ref}
       className="mb-20 mt-10 sm:mb-28 w-[min(100%,38rem)] text-center mx-auto "
       initial={{
         opacity: 0,

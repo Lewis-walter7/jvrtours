@@ -19,7 +19,7 @@ const About = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row items-center w-[80%] mx-auto justify-center px-6 py-10 bg-white">
+    <section className="flex flex-col md:flex-row mt-6 items-center w-[80%] mx-auto justify-center px-6 py-10 bg-white">
       <div className="w-full md:w-1/2 mb-6 md:mb-0">
         <Image
           src="/flamingo.png"
