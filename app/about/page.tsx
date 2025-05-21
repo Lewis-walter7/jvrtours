@@ -6,6 +6,7 @@ import GetQuote from '../components/modal/getQuote'
 import AboutModal from './components/modal/aboutModal'
 import OurMissionModal from './components/modal/ourMissionModal'
 import WhyChooseUsModal from './components/modal/whyChooseUsModal'
+import Contact from '../components/contact'
 
 const AboutPage = () => {
   return (
@@ -15,6 +16,7 @@ const AboutPage = () => {
         <AboutModal />
         <OurMissionModal/>
         <WhyChooseUsModal/>
+         <Contact />
     </div>
   )
 }
