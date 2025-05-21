@@ -72,7 +72,7 @@ export default function Footer() {
               <a href="https://x.com/JvrLtd?t=NZLgovQKnObDPMe4y5D9gg&s=08" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                 <BsTwitter size={20}/>
               </a>
-              <a href="tiktok.com/@jvr_tours" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <a href="https://tiktok.com/@jvr_tours" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                 <BsTiktok size={20} />
               </a> 
               <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white">
