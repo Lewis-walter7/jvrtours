@@ -3,7 +3,6 @@
 import { useState } from "react";
 import AccordionLayout from "./components/accordionlayout";
 import Hero from "./components/hero";
-import Testimonials from "./components/testimonials";
 import { accordionData } from "./lib/data";
 import PlacesPage from "./components/places";
 import CTASection from "./components/CTAsection";
