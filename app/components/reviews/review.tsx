@@ -1,9 +1,8 @@
-'use client'
-
 import React from 'react'
 import { FaStar } from 'react-icons/fa'
 import ReviewSlider from './reviewSlider'
 import useReviewModal from '@/app/hooks/useReviewModal'
+import useAboutUsModal from '@/app/hooks/useAboutUsModal'
 
 const Review = () => {
 
@@ -35,18 +34,17 @@ const Review = () => {
                             <FaStar />
                         </div>
                     </div>
-                    <div >
+                    
                         <button  
                             onClick={() => {
                                 reviewModal.onOpen()
                                 console.log('Add Review button clicked')
-
                             }}                       
-                            className='bg-white text-[#13357b] px-4 py-2 rounded-md hover:bg-gray-200 transition duration-300'
+                            className='bg-white cursor-pointer text-[#13357b] px-4 py-2 rounded-md hover:bg-gray-200 transition duration-300'
                          >
                             Add Review
                         </button>
-                    </div>
+                   
                 </div>
             </div>
             <div className='overflow-hidden'>

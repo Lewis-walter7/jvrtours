@@ -10,9 +10,18 @@ import db from "../../db/testimonial.json";
 import { FaStar } from 'react-icons/fa';
 import Image from 'next/image';
 
+export type testimonial = {
+    name: string;
+    message: string;
+    location: string;
+    image: string;
+}
+
+const ReviewSlider = async () => {
+    const response = await fetch('/api/reviews');
+    let reviews = await response.json();
 
 
-const ReviewSlider = () => {
   return (
     <div>
         <Swiper
@@ -24,7 +33,7 @@ const ReviewSlider = () => {
             grabCursor={true} 
             modules={[EffectCards]} 
             className="md:w-[450px] w-[350px] h-[300px]">
-                {db.testimonial.map((testimonial, i) => {
+                {reviews.map((testimonial: testimonial, i: number) => {
                     return (
                         <SwiperSlide 
                             key={i}
@@ -55,6 +64,10 @@ const ReviewSlider = () => {
                                         <div>
                                             <p className='text-sm lg:text-lgfont-semibold'>
                                                 {testimonial.name}
+                                            </p>
+                                            
+                                            <p className='text-sm lg:text-lgfont-semibold'>
+                                                {testimonial.location}
                                             </p>
                                         </div>
                                     </div>

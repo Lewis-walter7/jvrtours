@@ -3,13 +3,32 @@ import { PrismaClient } from '@/generated/prisma';
 
 const prisma = new PrismaClient();
 
+// Sample images for reviews
+const sampleImages = [
+  '/wolf.png',
+  'anime.png',
+  'car.png',
+  'car2.png',
+  'phone.png',
+];
+
+function getRandomImage() {
+  return sampleImages[Math.floor(Math.random() * sampleImages.length)];
+}
+
 // GET
 export async function GET() {
   try {
     const reviews = await prisma.review.findMany({
       orderBy: { createdAt: 'desc' },
     });
-    return NextResponse.json(reviews);
+
+    const enhancedReviews = reviews.map((review) => ({
+      ...review,
+      image: getRandomImage(),
+    }));
+
+    return NextResponse.json(enhancedReviews);
   } catch (error) {
     console.error('GET /api/reviews error:', error);
     return new NextResponse('Internal Server Error', { status: 500 });
