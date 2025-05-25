@@ -1,0 +1,21 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Review {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  reviewText String   @map("reviewText")
+  name       String   @map("name")
+  country    String   @map("country")
+  createdAt  DateTime @default(now()) @map("createdAt")
+
+  @@map("reviews")
+}

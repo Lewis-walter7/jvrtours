@@ -6,11 +6,11 @@ import Hero from "./components/hero";
 import Testimonials from "./components/testimonials";
 import { accordionData } from "./lib/data";
 import PlacesPage from "./components/places";
-import Contact from "./components/contact";
 import CTASection from "./components/CTAsection";
 import InfoModal from "./components/modal/InfoModal";
 import GetQuote from "./components/modal/getQuote";
 import Hero2 from "./components/hero2";
+import Review from "./components/reviews/review";
 
 
 export default function Home() {
@@ -23,9 +23,9 @@ export default function Home() {
   };
   return (
     <div >
-        <Hero2 />
+        <Hero />
         <PlacesPage />
-        <Testimonials />
+        <Review />
         <AccordionLayout 
           handleClick={handleClick}
           isSomeActive={isSomeActive}
@@ -33,7 +33,6 @@ export default function Home() {
           turn={active}
           setTurn={setActive}
         />
-       
         <InfoModal />
         <GetQuote />
         <CTASection />

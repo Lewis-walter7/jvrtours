@@ -63,6 +63,9 @@ const GetQuote = () => {
     <div className="text-lg font-semibold text-green-600">
       Estimated Cost: ${cost.toLocaleString()}
     </div>
+    <div className="text-sm md:text-base text-grey-600 italic">
+      *NB: This is an estimated cost and may vary based on actual services and availability.
+    </div>
 
     <button
       //onClick={onClose}

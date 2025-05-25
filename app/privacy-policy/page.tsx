@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import Privacy from './components/privacy'
 import GetQuote from '../components/modal/getQuote'
