@@ -44,7 +44,7 @@ const ReviewModal: React.FC = () => {
         country: '',
       });
 
-      reviewModal.onClose(); // optionally close modal
+      reviewModal.onClose(); 
     } catch (err) {
       toast.error('Failed to submit review.');
       console.error(err);
@@ -82,7 +82,7 @@ const ReviewModal: React.FC = () => {
             type="text"
             value={formData.name}
             onChange={handleInputChange}
-            placeholder="Your name"
+            placeholder="Eg John May, UK"
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
@@ -118,7 +118,7 @@ const ReviewModal: React.FC = () => {
             type="text"
             value={formData.country}
             onChange={handleInputChange}
-            placeholder="Your country"
+            placeholder="Eg Asian Tourist"
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />

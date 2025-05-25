@@ -84,7 +84,7 @@ const ReviewSlider = () => {
                                     <div className='flex items-center space-x-4'>
                                         <div>
                                             <Image 
-                                                src={'/car.png'} 
+                                                src={'/wolf.png'} 
                                                 width={60}
                                                 height={60}
                                                 alt="Reviewer Image"

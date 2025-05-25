@@ -57,13 +57,66 @@ const HeroSection = () => {
               </svg>
               <div>
                 <p className="text-lg font-medium mb-[0.2rem]">Location</p>
-                <input
-                  type="text"
-                  placeholder="Where are you going?"
-                  className="outline-none border-none placeholder:text-gray-800"
-                  value={location}
-                  onChange={(e) => setLocation(e.target.value)}
-                />
+                <select 
+                  name="tourist_spots" 
+                  id="tourist_spots"
+                  className="block w-full p-3 text-base text-gray-800 bg-white border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                >
+                  <optgroup label="Kenya">
+                    <option value="maasai_mara">Maasai Mara National Reserve</option>
+                    <option value="amboseli">Amboseli National Park</option>
+                    <option value="lake_nakuru">Lake Nakuru National Park</option>
+                    <option value="diani_beach">Diani Beach</option>
+                    <option value="mount_kenya">Mount Kenya</option>
+                  </optgroup>
+
+                  <optgroup label="Tanzania">
+                    <option value="serengeti">Serengeti National Park</option>
+                    <option value="ngorongoro">Ngorongoro Crater</option>
+                    <option value="kilimanjaro">Mount Kilimanjaro</option>
+                    <option value="zanzibar">Zanzibar Island</option>
+                    <option value="selous">Selous Game Reserve</option>
+                  </optgroup>
+
+                  <optgroup label="Uganda">
+                    <option value="bwindi">Bwindi Impenetrable Forest</option>
+                    <option value="queen_elizabeth">Queen Elizabeth National Park</option>
+                    <option value="murchison_falls">Murchison Falls National Park</option>
+                    <option value="lake_victoria">Lake Victoria</option>
+                    <option value="rwenzori">Rwenzori Mountains National Park</option>
+                  </optgroup>
+
+                  <optgroup label="Rwanda">
+                    <option value="volcanoes_np">Volcanoes National Park</option>
+                    <option value="nyungwe">Nyungwe Forest National Park</option>
+                    <option value="lake_kivu">Lake Kivu</option>
+                    <option value="kigali_memorial">Kigali Genocide Memorial</option>
+                    <option value="akagera">Akagera National Park</option>
+                  </optgroup>
+
+                  <optgroup label="Burundi">
+                    <option value="rusizi">Rusizi National Park</option>
+                    <option value="lake_tanganyika">Lake Tanganyika</option>
+                    <option value="gishora">Gishora Drum Sanctuary</option>
+                    <option value="kiganda">Kiganda Royal Grounds</option>
+                  </optgroup>
+
+                  <optgroup label="Ethiopia">
+                    <option value="lalibela">Lalibela Rock-Hewn Churches</option>
+                    <option value="simien">Simien Mountains National Park</option>
+                    <option value="axum">Axum</option>
+                    <option value="blue_nile">Lake Tana and Blue Nile Falls</option>
+                  </optgroup>
+
+                  <optgroup label="South Sudan">
+                    <option value="boma_np">Boma National Park</option>
+                  </optgroup>
+
+                  <optgroup label="Somalia">
+                    <option value="laas_geel">Laas Geel Caves</option>
+                  </optgroup>
+                </select>
+
               </div>
             </div>
             <div className="flex items-center space-x-6">
