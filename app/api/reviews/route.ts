@@ -6,10 +6,10 @@ const prisma = new PrismaClient();
 // Sample images for reviews
 const sampleImages = [
   '/wolf.png',
-  'anime.png',
-  'car.png',
-  'car2.png',
-  'phone.png',
+  '/anime.png',
+  '/car.png',
+  '/car2.png',
+  '/phone.png',
 ];
 
 function getRandomImage() {
