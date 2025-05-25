@@ -1,10 +1,10 @@
 import { create } from 'zustand'
-interface UseReviewModalProps{
+interface useReviewModalProps{
     isOpen: boolean,
     onOpen: () => void,
     onClose: () => void,
 }
-const useReviewModal = create<UseReviewModalProps>((set) => ({
+const useReviewModal = create<useReviewModalProps>((set) => ({
   isOpen: false,
   onOpen: ()=> set({
     isOpen: true

@@ -34,9 +34,9 @@ export default function Home() {
           turn={active}
           setTurn={setActive}
         />
+        <ReviewModal />
         <InfoModal />
         <GetQuote />
-        <ReviewModal />
         <CTASection />
     </div>
   );

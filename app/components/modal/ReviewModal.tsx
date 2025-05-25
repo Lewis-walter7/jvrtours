@@ -29,7 +29,6 @@ const ReviewModal = () => {
         <Modal 
             title='Add Your Review'
             onClose={reviewModal.onClose}
-            body={body}
         />
     </>
   )
