@@ -19,15 +19,18 @@ function getRandomImage() {
 // GET
 export async function GET() {
   try {
-    const reviews = await prisma.review.findMany({
+    const allReviews = await prisma.review.findMany({
       orderBy: { createdAt: 'desc' },
     });
 
-    const enhancedReviews = reviews.map((review) => ({
-      ...review,
-      image: getRandomImage(),
-    }));
 
+    const shuffled = allReviews.sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, 7)
+
+    const enhancedReviews = selected.map(review => ({
+      ...review,
+      image: getRandomImage()
+    }));;
     return NextResponse.json(enhancedReviews);
   } catch (error) {
     console.error('GET /api/reviews error:', error);

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,6 +11,7 @@ import { EffectCards } from 'swiper/modules';
 import db from "../../db/testimonial.json";
 import { FaStar } from 'react-icons/fa';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export type testimonial = {
     name: string;
@@ -17,10 +20,17 @@ export type testimonial = {
     image: string;
 }
 
-const ReviewSlider = async () => {
-    const response = await fetch('/api/reviews');
-    let reviews = await response.json();
+const ReviewSlider = () => {
+     const [reviews, setReviews] = useState([]);
 
+    useEffect(() => {
+        const fetchReviews = async () => {
+        const res = await fetch('/api/reviews');
+        const data = await res.json();
+        setReviews(data);
+        };
+        fetchReviews();
+    }, []);
 
   return (
     <div>
