@@ -11,6 +11,7 @@ import InfoModal from "./components/modal/InfoModal";
 import GetQuote from "./components/modal/getQuote";
 import Hero2 from "./components/hero2";
 import Review from "./components/reviews/review";
+import ReviewModal from "./components/modal/ReviewModal";
 
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
         />
         <InfoModal />
         <GetQuote />
+        <ReviewModal />
         <CTASection />
     </div>
   );

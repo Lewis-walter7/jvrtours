@@ -1,8 +1,11 @@
 import React from 'react'
 import { FaStar } from 'react-icons/fa'
 import ReviewSlider from './reviewSlider'
+import useReviewModal from '@/app/hooks/useReviewModal'
 
 const Review = () => {
+
+    const reviewModal = useReviewModal()
   return (
     <div className=" pt-20 pb-20 mb-6 justify-center items-center flex flex-col bg-[#13357b]">
         <div className='w-[80%] mx-auto grid items-center grid-cols-1 lg:grid-cols-2 gap-10'>
@@ -29,6 +32,14 @@ const Review = () => {
                             <FaStar />
                             <FaStar />
                         </div>
+                    </div>
+                    <div>
+                        <button 
+                            onClick={reviewModal.onOpen}
+                            className='bg-white text-[#13357b] px-4 py-2 rounded-md hover:bg-gray-200 transition duration-300'
+                         >
+                            Add Review
+                        </button>
                     </div>
                 </div>
             </div>
