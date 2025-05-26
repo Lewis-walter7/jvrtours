@@ -10,7 +10,9 @@ export default function Service() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">OUR SERVICES</h2>
         <div className="w-full">
-          <ServiceCarousel services={services} />
+          <ServiceCarousel 
+            services={services} 
+          />
         </div>  
       </div>
     </section>

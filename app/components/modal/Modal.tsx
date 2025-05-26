@@ -35,11 +35,11 @@ const Modal: React.FC<ModalProps> = ({
     } 
 
     return (
-      <> 
+      <>
         <div className='fixed overflow-x-hidden outline-none overflow-y-auto inset-0 z-50 flex items-center justify-center bg-neutral-800/70 bg-opacity-50 focus:outline-none'>
           <div className='relative w-full md:w-8/12 lg:w-6/12 xl:w-5/12 my-6 mx-auto h-full md:h-auto'>
             <div className={`translate duration-300 h-full ${showModal ? 'translate-y-0' : 'translate-y-full'} ${showModal ? 'opacity-100' : 'opacity-0'}`}>
-              <div className='translate h-full lg:h-auto md:h-auto border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none'>
+              <div className='translate h-full lg:h-auto md:h-auto border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white max-h-[80vh] outline-none focus:outline-none'>
                 {/* Header */}
                 <div className='flex items-center p-6 rounded-lg justify-center relative border-b-[1px]'>
                     <button className='p-1 border-0 hover:opacity-70 transition absolute left-9' onClick={handleClose}>
@@ -54,8 +54,7 @@ const Modal: React.FC<ModalProps> = ({
                   {body}
                 </div>
                 {/* Footer */}
-                <div>
-                  
+                <div>                  
                 </div>
               </div>
             </div>

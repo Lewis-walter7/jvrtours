@@ -2,7 +2,6 @@ import React from 'react'
 import { FaStar } from 'react-icons/fa'
 import ReviewSlider from './reviewSlider'
 import useReviewModal from '@/app/hooks/useReviewModal'
-import useAboutUsModal from '@/app/hooks/useAboutUsModal'
 
 const Review = () => {
 
