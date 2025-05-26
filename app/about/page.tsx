@@ -16,7 +16,7 @@ const AboutPage = () => {
         <AboutModal />
         <OurMissionModal/>
         <WhyChooseUsModal/>
-         <Contact />
+        <Contact />
     </div>
   )
 }

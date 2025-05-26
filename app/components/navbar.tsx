@@ -77,14 +77,14 @@ export default function Navbar() {
         </div>
         <div className="flex flex-col p-4 space-y-4">
           {links.map((link) => (
-            <Link
+            <a
               key={link.hash}
               href={link.hash}
               className="text-gray-700 hover:text-blue-600 text-lg"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
-            </Link>
+            </a>
           ))}
         </div>
       </div>

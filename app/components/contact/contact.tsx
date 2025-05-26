@@ -19,7 +19,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       //ref={ref}
-      className="mb-20 mt-10 sm:mb-28 w-[min(100%,38rem)] text-center mx-auto "
+      className="mb-20 mt-10 sm:mx-10 sm:mb-28 w-[min(100%,38rem)] text-center md:mx-auto "
       initial={{
         opacity: 0,
       }}
@@ -77,7 +77,7 @@ export default function Contact() {
         />
         <SubmitBtn />
       </form>
-      <div className="flex items-center space-x-4 mt-10">
+      <div className="flex items-center space-x-4 mt-10 mx-auto w-full">
           <div className="flex space-x-4">        
            
             <CustomButton

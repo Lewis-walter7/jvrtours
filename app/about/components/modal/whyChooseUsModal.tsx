@@ -6,9 +6,40 @@ const WhyChooseUsModal = () => {
   const whyChooseUsModal = useWhyChooseUsModal()
 
   const body = (
-      <div>
-        Hello
+      <>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+          {/* <div className="bg-gray-100 p-6 rounded-xl hover:shadow-md transition-transform hover:-translate-y-1">
+            <div className="text-3xl mb-4">🌍</div>
+            <h3 className="text-xl font-semibold mb-2">Curated Destinations</h3>
+            <p>Travel to breathtaking locations handpicked by experts.</p>
+          </div> */}
+          <div className="bg-gray-100 p-6 rounded-xl hover:shadow-md transition-transform hover:-translate-y-1">
+            <div className="text-3xl mb-2">👥</div>
+            <h3 className="text-xl font-semibold mb-2">Personalized Itineraries</h3>
+            <p>Every trip is tailored to match your style and interests.</p>
+          </div>
+          <div className="bg-gray-100 p-6 rounded-xl hover:shadow-md transition-transform hover:-translate-y-1">
+            <div className="text-3xl mb-2">🎧</div>
+            <h3 className="text-xl font-semibold mb-2">Local Expert Guides</h3>
+            <p>Discover hidden gems with passionate local storytellers.</p>
+          </div>
+          <div className="bg-gray-100 p-6 rounded-xl hover:shadow-md transition-transform hover:-translate-y-1">
+            <div className="text-3xl mb-2">🛫</div>
+            <h3 className="text-xl font-semibold mb-2">All-Inclusive Planning</h3>
+            <p>Flights, stays, and transport — we handle it all.</p>
+          </div>
+          <div className="bg-gray-100 p-6 rounded-xl hover:shadow-md transition-transform hover:-translate-y-1">
+            <div className="text-3xl">📞</div>
+            <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
+            <p>We're here whenever you need us, wherever you are.</p>
+          </div>
+          {/* <div className="bg-gray-100 p-6 rounded-xl hover:shadow-md transition-transform hover:-translate-y-1">
+            <div className="text-3xl mb-4">🏆</div>
+            <h3 className="text-xl font-semibold mb-2">5-Star Reputation</h3>
+            <p>Join thousands of happy travelers who trust our service.</p>
+          </div> */}
       </div>
+      </>
     )
   return (
     <Modal
