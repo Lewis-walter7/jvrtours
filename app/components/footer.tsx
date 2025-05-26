@@ -1,9 +1,13 @@
 import Link from 'next/link';
 import { BiMailSend, BiPhone } from 'react-icons/bi';
-import { BsGoogle, BsInstagram, BsTiktok, BsTwitter } from 'react-icons/bs';
+import { BsGoogle, BsInstagram, BsTiktok, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
+import WhatsAppButton from './contact/customButton';
+import CustomButton from './contact/customButton';
 
 export default function Footer() {
+  const fullUrl = "https://wa.me/+254702813866?text=Hello JVR Tours, I would like to inquire about your services.";
+  
   return (
     <footer className="bg-[#1A2A44] text-white py-15">
       <div className="container mx-auto px-4">
@@ -75,9 +79,9 @@ export default function Footer() {
               <a href="https://tiktok.com/@jvr_tours" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                 <BsTiktok size={20} />
               </a> 
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                <BsInstagram size={20} />
-              </a> 
+              <a href={fullUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                <BsWhatsapp size={20} />
+              </a>               
             </div>            
           </div>
           <div className="ml-8">

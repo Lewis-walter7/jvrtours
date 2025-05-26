@@ -1,4 +1,9 @@
-import { BiGlobe } from "react-icons/bi";
+import { BiGlobe, BiTrip } from "react-icons/bi";
+import { RiCustomerService2Line, RiServiceLine} from "react-icons/ri";
+import { SiHiltonhotelsandresorts } from "react-icons/si";
+import { MdOutlinePriceCheck } from "react-icons/md";
+
+
 
 export const links = [
   {
@@ -98,27 +103,27 @@ export const accordionData = [
       description: "Our unique matching system lets you find just the tour you want for your next holiday.",
     },
     {
-      icon: BiGlobe,
+      icon: BiTrip,
       title: "Wide Variety of Tours",
       description: "We offer a wide variety of personally picked tours with destinations all over the globe.",
     },
     {
-      icon: BiGlobe,
+      icon: RiServiceLine,
       title: "Highly Qualified Service",
       description: "Our tour managers are qualified, skilled, and friendly to bring you the best service.",
     },
     {
-      icon: BiGlobe,
+      icon: RiCustomerService2Line,
       title: "24/7 Support",
       description: "You can always get professional support from our staff 24/7 and ask any question you have.",
     },
     {
-      icon: BiGlobe,
+      icon: SiHiltonhotelsandresorts,
       title: "Handpicked Hotels",
       description: "Our team offers only the best selection of affordable and luxury hotels to our clients.",
     },
     {
-      icon: BiGlobe,
+      icon: MdOutlinePriceCheck,
       title: "Best Price Guarantee",
       description: "If you find tours that are cheaper than ours, we will compensate the difference.",
     }

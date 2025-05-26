@@ -1,12 +1,15 @@
 "use client";
 
 import React, { useRef } from "react";
-import SectionHeading from "./section-heading";
+import SectionHeading from "../section-heading";
 import { motion } from "framer-motion";
-import { useSectionInView } from "../lib/hooks";
-import { sendEmail } from "../../actions/sendEmail";
-import SubmitBtn from "./submit-btn";
+import { useSectionInView } from "../../lib/hooks";
+import { sendEmail } from "../../../actions/sendEmail";
+import SubmitBtn from "../submit-btn";
 import toast from "react-hot-toast";
+import { FaFacebook } from "react-icons/fa";
+import { BsTiktok, BsTwitter, BsWhatsapp } from "react-icons/bs";
+import CustomButton from "./customButton";
 
 export default function Contact() {
   //const { ref } = useSectionInView("Contact");
@@ -37,7 +40,7 @@ export default function Contact() {
         <a className="underline" href="mailto:info@jvrtours.co.ke">
           info@jvrtours.co.ke
         </a>{" "}
-        or through this form.
+        , through this form or via our social media.
       </p>
 
       <form
@@ -74,6 +77,35 @@ export default function Contact() {
         />
         <SubmitBtn />
       </form>
+      <div className="flex items-center space-x-4 mt-10">
+          <div className="flex space-x-4">        
+           
+            <CustomButton
+              url="https://www.facebook.com/share/1AzbpGHxAF/"
+              color="blue"
+              message="Hello JVR Tours, I would like to inquire about your services."
+              icon={FaFacebook}
+            /> 
+            <CustomButton
+              url="https://x.com/JvrLtd?t=NZLgovQKnObDPMe4y5D9gg&s=08"
+              color="black"
+              message="Hello JVR Tours, I would like to inquire about your services."
+              icon={BsTwitter}
+            /> 
+            <CustomButton
+              color="black"
+              url="https://tiktok.com/@jvr_tours"
+              message="Hello JVR Tours, I would like to inquire about your services."
+              icon={BsTiktok}
+            /> 
+             <CustomButton
+              color="green"
+              phoneNumber="+254702813866"
+              message="Hello JVR Tours, I would like to inquire about your services."
+              icon={BsWhatsapp}
+            /> 
+          </div>            
+        </div>
     </motion.section>
   );
 }

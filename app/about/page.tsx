@@ -6,7 +6,7 @@ import GetQuote from '../components/modal/getQuote'
 import AboutModal from './components/modal/aboutModal'
 import OurMissionModal from './components/modal/ourMissionModal'
 import WhyChooseUsModal from './components/modal/whyChooseUsModal'
-import Contact from '../components/contact'
+import Contact from '../components/contact/contact'
 
 const AboutPage = () => {
   return (

@@ -1,5 +1,4 @@
 import { services } from "@/app/lib/data";
-import { BiBadgeCheck } from "react-icons/bi";
 import ServiceCarousel from "./ServiceCarousel";
 
 
