@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <nav className="bg-blue-600 dark:bg-white  p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Image src="/image.png" alt='JVR Tours Company' onClick={() => window.location.href = '/'} width={300} height={100} className='cursor-pointer'/>
+        <Image src="/image.png" alt='JVR Tours Company' onClick={() => window.location.href = '/'} width={280} height={100} className='cursor-pointer'/>
 
         <div
           className={`md:flex ${
@@ -41,7 +41,7 @@ export default function Navbar() {
                     // setTimeOfLastClick(Date.now());
                 }}
                 >
-                Get quote
+                Quote
             </button>
          </div>
         </div>
