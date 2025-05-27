@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaStar } from 'react-icons/fa'
+import { motion } from "framer-motion";
 import ReviewSlider from './reviewSlider'
 import useReviewModal from '@/app/hooks/useReviewModal'
 
@@ -7,7 +8,22 @@ const Review = () => {
 
     const reviewModal = useReviewModal()
   return (
-    <div className=" pt-20 pb-20 mb-6 justify-center items-center flex flex-col bg-[#13357b]">
+    <motion.section 
+        id="testimonials" 
+        className=" pt-20 pb-20 mb-6 justify-center items-center flex flex-col bg-[#13357b]"
+        initial={{
+        opacity: 0,
+        }}
+        whileInView={{
+            opacity: 1,
+        }}
+        transition={{
+            duration: 2,
+        }}
+        viewport={{
+            once: true,
+        }}
+    >
         <div className='w-[80%] mx-auto grid items-center grid-cols-1 lg:grid-cols-2 gap-10'>
             <div>
                 <h1 className='text-2xl font-semibold text-white'>
@@ -50,7 +66,7 @@ const Review = () => {
                 <ReviewSlider />
             </div>
         </div>
-    </div>
+    </motion.section>
   )
 }
 

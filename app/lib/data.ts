@@ -20,15 +20,15 @@ export const links = [
   },
   {
     name: "Places",
-    hash: "#projects",
+    hash: "#places",
   },
   {
-    name: "Testimonials",
-    hash: "#experience",
+    name: "Hotels",
+    hash: "/hotels",
   },
   {
-    name: "FAQs",
-    hash: "#faqs",
+    name: "News",
+    hash: "/news",
   },
 ] as const;
 

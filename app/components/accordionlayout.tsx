@@ -18,7 +18,7 @@ interface LayoutProps {
 
 const AccordionLayout = ({handleClick, isSomeActive, data, turn, setTurn}:LayoutProps) => {
   return (
-    <div className='items-center flex flex-col md:mt-11 w-full px-4'>
+    <div id='faqs' className='items-center flex flex-col md:mt-11 w-full px-4'>
         <span className='text-3xl px-6 py-3 text-white rounded-md  bg-gradient-to-r from-blue-700 to-sky-500'>
             Frequently Asked Questions
         </span>
