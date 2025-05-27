@@ -35,14 +35,14 @@ const About = () => {
   }
 
   return (
-    <section className="flex flex-col md:flex-row mt-6 items-center w-[80%] mx-auto justify-center px-6 py-10 bg-white">
+    <section className="flex flex-col md:flex-row mt-6 items-center w-[90%] mx-auto justify-center px-6 py-10 bg-white">
       <div className="w-full md:w-1/2 mb-6 md:mb-0">
         <Image
           src="/flamingo.png"
           alt="Flamingos in lake"
           width={500}
           height={300}
-          className="rounded-lg shadow-md"
+          className="rounded-lg shadow-md" 
         />
       </div>
 

@@ -31,7 +31,7 @@ const RecommendedHotels: React.FC<RecommendedHotelsProps> = ({ hotels }) => {
       <div className="w-[80%] mx-auto">
         <h1 className="text-xl sm:text-3xl text-blue-950 font-bold">Recommended Hotels</h1>
         <p className="mt-2 text-gray-700 sm:text-base text-sm font-medium">
-          A list of some of the best hotels in the country.
+          A list of some of the best hotels in the region.
         </p>
       </div>
       <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 items-center mt-16">

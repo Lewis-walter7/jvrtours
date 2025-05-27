@@ -13,7 +13,7 @@ export const teamMembers = [
     },
     {
       name: "Vincent Owino",
-      role: "Director of operations",
+      role: "Director of Operations",
       contact: "+254 768073349",
       image: "/vincent.png", 
     },
