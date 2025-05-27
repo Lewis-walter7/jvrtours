@@ -82,12 +82,12 @@ export const hotels = [
   {
     id: 9,
     name: 'Bisate Lodge',
-    location: 'Volcanoes National Park, Rwanda',
+    location: 'Volcanoes National Park, Rwanda.',
     image: '/hotels/bisate.png',
     rating: '4.9',
     reviews: '645',
     price: '1350',
-    alt: 'Bisate Lodge in Volcanoes National Park',
+    alt: 'Bisate Lodge in Volcanoes National Park.',
   },
   {
     id: 10,
