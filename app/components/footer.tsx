@@ -1,13 +1,17 @@
+'use client'
+
 import Link from 'next/link';
 import { BiMailSend, BiPhone } from 'react-icons/bi';
 import { BsGoogle, BsInstagram, BsTiktok, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
 import WhatsAppButton from './contact/customButton';
 import CustomButton from './contact/customButton';
+import { useRouter } from 'next/navigation';
 
 export default function Footer() {
   const fullUrl = "https://wa.me/+254702813866?text=Hello JVR Tours, I would like to inquire about your services.";
-  
+  const router = useRouter();
+
   return (
     <footer className="bg-[#1A2A44] text-white py-15">
       <div className="container mx-auto px-4">
@@ -36,12 +40,18 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">POPULAR NEWS</h3>
             <div className="space-y-4">
-              <div className='space-y-2'>
-                <p className="text-sm text-[#59b4a9]">Your Personal Guide to 5 Best <br /> Places to Visit on Earth</p>
+              <div 
+                className='space-y-2' 
+                onClick={() => router.push('/news/7')}
+              >
+                <p className="text-sm text-[#59b4a9] hover:text-green-400 cursor-pointer">Your Personal Guide to 5 Best <br /> Places to Visit on Earth</p>
                 <p className="text-xs text-gray-400">MAY 04, 2019</p>
               </div>
-              <div className='space-y-2'>
-                <p className="text-sm text-[#59b4a9]">Top 10 Hotels: Rating <br /> by Wonder Tour Travel Experts</p>
+              <div 
+                className='space-y-2' 
+                onClick={() => router.push('/news/6')}
+              >
+                <p className="text-sm text-[#59b4a9]  hover:text-green-400 cursor-pointer">Top 10 Hotels: Rating <br /> by Wonder Tour Travel Experts</p>
                 <p className="text-xs text-gray-400">MAY 04, 2019</p>
               </div>
             </div>

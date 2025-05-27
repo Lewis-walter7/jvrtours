@@ -108,4 +108,68 @@ export const newsArticles: NewsArticle[] = [
       <p class="mt-4">By adopting these strategies, you'll not only save money on baggage fees but also enjoy greater mobility and flexibility during your travels. Happy packing!</p>
     `,
   },
+  {
+  id: '6',
+  title: 'Top 10 Hotels: Rating by Wonder Tour Travel Experts',
+  snippet: 'Discover the crème de la crème of hospitality as ranked by our travel connoisseurs — a curated list of the top 10 hotels offering exceptional comfort, service, and unforgettable experiences.',
+  imageUrl: '/hotels/kwetu.png',
+  date: 'May 27, 2025',
+  category: 'Hotels',
+  author: 'Wonder Tour Experts',
+  readMoreUrl: '/news/6',
+  fullContent: `
+    <p>Every year, Wonder Tour's panel of seasoned travel experts compiles a list of the most outstanding hotels around the globe. This year’s <strong>Top 10 Hotels</strong> shine through for their exemplary service, elegant design, and ability to turn a stay into a memory worth cherishing.</p>
+    
+    <p class="mt-4">The evaluation process involves rigorous criteria, including guest satisfaction, amenities, uniqueness of location, dining options, and sustainability practices. From urban luxury towers to serene coastal escapes, each hotel has been vetted through real experiences and in-depth reviews.</p>
+    
+    <p class="mt-4">Leading the list is <em>Singita Sabora Camp</em> in Tanzania — a luxury tented camp offering unmatched safari elegance. Other notable mentions include:</p>
+    
+    <ul class="mt-4 list-disc list-inside">
+      <li>Finch Hattons Luxury – Tsavo West, Kenya</li>
+      <li>Bisate Lodge – Volcanoes National Park, Rwanda</li>
+      <li>Manta Resort – Pemba Island, Tanzania</li>
+      <li>Baraza Resort & Spa – Zanzibar, Tanzania</li>
+      <li>Fairmont The Norfolk – Nairobi, Kenya</li>
+      <li>Melia Serengeti Lodge – Serengeti National Park, Tanzania</li>
+      <li>Zuri Zanzibar – Kendwa, Zanzibar</li>
+      <li>One&Only Nyungwe – Nyungwe Forest, Rwanda</li>
+      <li>Villa Rosa Kempinski – Nairobi, Kenya</li>
+    </ul>
+
+    <p class="mt-4">Each destination offers more than just a place to sleep — they provide an experience. Whether you’re planning a honeymoon, a business retreat, or your next bucket-list adventure, our list is your passport to unforgettable stays.</p>
+    
+    <p class="mt-4"><strong>Full rankings and reviews</strong> are available on our website. Dive into luxury, one hotel at a time.</p>
+  `,
+},
+{
+  id: '7',
+  title: 'Your Personal Guide to 5 Best Places to Visit in East Africa',
+  snippet: 'From wildlife adventures to pristine beaches and cultural wonders, explore the top 5 must-visit destinations in East Africa for your next unforgettable journey.',
+  imageUrl: '/leopard.png',
+  date: 'May 27, 2025',
+  category: 'Travel',
+  author: 'Wonder Tour Experts',
+  readMoreUrl: '/news/7',
+  fullContent: `
+    <p>East Africa is a region rich in diversity, offering a spectacular blend of landscapes, cultures, and wildlife that draw travelers from all over the world. Whether you're an adventurer, a beach lover, or a cultural enthusiast, these five destinations will leave a lasting impression.</p>
+
+    <h3 class="mt-4 font-semibold">1. Serengeti National Park – Tanzania</h3>
+    <p>Home to the iconic Great Migration, the Serengeti offers one of the most breathtaking wildlife spectacles on the planet. Witness lions, elephants, wildebeests, and zebras roaming the expansive savannah, and enjoy luxurious lodges nestled in the heart of nature.</p>
+
+    <h3 class="mt-4 font-semibold">2. Maasai Mara – Kenya</h3>
+    <p>This world-renowned game reserve is famous for its dense wildlife population and the annual wildebeest migration. It also offers opportunities to engage with the Maasai culture and enjoy hot air balloon rides over the plains.</p>
+
+    <h3 class="mt-4 font-semibold">3. Zanzibar – Tanzania</h3>
+    <p>For a mix of history, culture, and pristine beaches, Zanzibar is the place to be. Wander through the narrow alleys of Stone Town, relax on powdery white sands, and dive into the turquoise waters of the Indian Ocean.</p>
+
+    <h3 class="mt-4 font-semibold">4. Bwindi Impenetrable Forest – Uganda</h3>
+    <p>A UNESCO World Heritage Site, Bwindi is known for its population of endangered mountain gorillas. Trekking through the misty forest to encounter these gentle giants is a once-in-a-lifetime experience.</p>
+
+    <h3 class="mt-4 font-semibold">5. Nyungwe Forest National Park – Rwanda</h3>
+    <p>One of Africa’s oldest rainforests, Nyungwe is a haven for primate lovers and bird watchers. With its scenic canopy walk, diverse wildlife, and lush scenery, it’s a gem in Rwanda’s ecotourism crown.</p>
+
+    <p class="mt-4">These destinations showcase the essence of East Africa — wild, vibrant, and profoundly beautiful. Whether you're planning a safari, beach holiday, or cultural tour, this guide ensures you hit the very best the region has to offer.</p>
+  `,
+}
+
 ];

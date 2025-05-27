@@ -206,7 +206,7 @@ export const places: Place[] = [
       "Spend a day or two with local Maasai — learn traditions, dance, and craft making in a respectful, guided setting. Get the chance to meet people known for their colorful clothing and beadwork.",
     imageUrl: '/maasai.png',
     rating: 4.3,
-    imageUrls: ['/masaai/culture.jpg', '/masaai/maasai.jpeg', '/masaai/maasa2.jpeg', '/masaai/maasai3.jpeg'],
+    imageUrls: ['/masaai/culture.jpg', '/masaai/masaai.jpeg', '/masaai/masaai2.jpeg', '/masaai/masaai3.jpeg'],
     readMoreUrl: '/places/5',
     fullContent: `
   <h3 class="text-2xl font-bold mt-4 mb-3">Immerse Yourself in Maasai Culture</h3>
