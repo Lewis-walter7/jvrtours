@@ -10,7 +10,7 @@ export const places: Place[] = [
     imageUrl: '/maasaimara.png',
     rating: 4.8,
     readMoreUrl: '/places/1',
-    imageUrls: ['/amboselli.png', '/flamingo.png', '/giraffe.png'],
+    imageUrls: ['/amboselli/amboselli.png', '/amboselli/amboselli1.jpg', '/amboselli/amboselli2.jpg'],
     fullContent: `
   <p class="mt-4 text-lg leading-relaxed">
     The <strong>Masai Mara National Reserve</strong> in Kenya is a world-renowned safari destination, offering visitors an unparalleled opportunity to witness African wildlife in its most raw and majestic form. It’s most famous for the <em>Great Migration</em>, an annual event where over 1.5 million wildebeest, zebras, and gazelles thunder across the Mara River in search of greener pastures.
@@ -61,7 +61,7 @@ export const places: Place[] = [
     imageUrl: '/amboselli.png',
     rating: 4.5,
     readMoreUrl: '/places/2',
-    imageUrls: ['/amboselli.png', '/flamingo.png', '/giraffe.png'],
+    imageUrls: ['/amboselli/amboselli.png', '/amboselli/amboselli1.jpg', '/amboselli/amboselli2.jpg'],
    fullContent: `
   <p class="mt-4 text-lg leading-relaxed">
     Embark on a captivating 5-day journey through two of Kenya’s most iconic wildlife destinations. This dual-park adventure blends the contrasting beauty of <strong>Amboseli National Park</strong>—famed for its towering views of <em>Mount Kilimanjaro</em>—with the wild, untamed charm of <strong>Tsavo National Park</strong>, Kenya’s largest and oldest protected area.
@@ -114,7 +114,7 @@ export const places: Place[] = [
     imageUrl: '/nairobipark.png',
     rating: 4.2,
     readMoreUrl: '/places/3',
-    imageUrls: ['/amboselli.png', '/flamingo.png', '/giraffe.png'],
+    imageUrls: ['/nairobinp/nairobi1.jpeg', '/nairobinp/nairobi2.jpeg', '/nairobinp/nairobi3.jpeg', '/nairobinp/nairobi4.jpeg', '/nairobinp/nairobi5.jpeg'],
     fullContent: `
   <p class="mt-4 text-lg leading-relaxed">
     Perfect for travelers with limited time, this immersive full-day tour showcases the best of Nairobi’s natural beauty and cultural landmarks—all in a single unforgettable experience.
@@ -165,7 +165,7 @@ export const places: Place[] = [
     imageUrl: '/diani.png',
     rating: 4.7,
     readMoreUrl: '/places/4',
-    imageUrls: ['/amboselli.png', '/flamingo.png', '/giraffe.png'],
+    imageUrls: ['/diani/diani1.jpeg', '/diani/diani2.jpeg', '/diani/diani3.jpeg', '/diani/diani.png'],
     fullContent: `
   <h3 class="text-2xl font-bold mt-4 mb-3">Tropical Bliss at Diani Beach</h3>
 
@@ -206,7 +206,7 @@ export const places: Place[] = [
       "Spend a day or two with local Maasai — learn traditions, dance, and craft making in a respectful, guided setting. Get the chance to meet people known for their colorful clothing and beadwork.",
     imageUrl: '/maasai.png',
     rating: 4.3,
-    imageUrls: ['/amboselli.png', '/flamingo.png', '/giraffe.png'],
+    imageUrls: ['/masaai/culture.jpg', '/masaai/maasai.jpeg', '/masaai/maasa2.jpeg', '/masaai/maasai3.jpeg'],
     readMoreUrl: '/places/5',
     fullContent: `
   <h3 class="text-2xl font-bold mt-4 mb-3">Immerse Yourself in Maasai Culture</h3>
