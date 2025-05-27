@@ -20,7 +20,7 @@ export const links = [
   },
   {
     name: "Places",
-    hash: "#places",
+    hash: "/places",
   },
   {
     name: "Hotels",

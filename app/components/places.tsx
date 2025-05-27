@@ -1,4 +1,4 @@
-import places from "../db/places.json"
+import {places} from "../db/places"
 import PlacesCarousel from "./placesCarousel";
 
 export default function PlacesPage() {
@@ -11,7 +11,7 @@ export default function PlacesPage() {
       <main className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <section className="w-full">
           <PlacesCarousel
-              places={places.places} />
+              places={places} />
         </section>
       </main>
     </div>

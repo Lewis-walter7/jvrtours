@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Place } from "../models/place";
 import useInfoModal from "../hooks/useInfoModal";
 import { usePlaceStore } from "../hooks/usePlaceStore";
+import { useRouter } from "next/navigation";
 
 interface PlacesCarouselProps {
   places: Place[];
@@ -61,6 +62,7 @@ export default function PlacesCarousel({ places }: PlacesCarouselProps) {
   const handleReadMore = (place: Place) => {
     setSelectedPlace(place);
   };
+  const router = useRouter();
 
   return (
     <Slider {...settings}>
@@ -68,7 +70,7 @@ export default function PlacesCarousel({ places }: PlacesCarouselProps) {
         <div key={place.name} className="px-2 min-h-100">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <img
-              src={place.image}
+              src={place.imageUrl}
               alt={place.name}
               className="w-full h-48 object-cover"
               loading="lazy"
@@ -90,10 +92,10 @@ export default function PlacesCarousel({ places }: PlacesCarouselProps) {
                   </svg>
                 ))}
                 <span className="ml-2 text-gray-600">{place.rating.toFixed(1)}</span>
-                <button className="ml-auto bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600"
+                <button className="ml-auto cursor-pointer bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600"
                   onClick={() => {
                     handleReadMore(place);
-                    infoModal.onOpen()
+                    router.push(place.readMoreUrl)
                     }
                   }
                 >
