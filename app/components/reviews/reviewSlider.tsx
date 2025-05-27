@@ -61,7 +61,7 @@ const ReviewSlider = () => {
             effect={'cards'} 
             grabCursor={true} 
             modules={[EffectCards]} 
-            className="md:w-[450px] w-[350px] h-[300px]">
+            className="md:w-[450px] w-[300px] h-[300px]">
                 {reviews.map((testimonial, index) => {                    
                     const key = testimonial.id ? testimonial.id : index;
                     return (

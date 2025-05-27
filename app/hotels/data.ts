@@ -21,7 +21,7 @@ export const hotels = [
   },
   {
     id: 3,
-    name: 'Finch Hattons Luxury Camp',
+    name: 'Finch Hattons Luxury',
     location: 'Tsavo West, Kenya',
     image: '/hotels/finch.jpg',
     rating: '4.9',
@@ -91,7 +91,7 @@ export const hotels = [
   },
   {
     id: 10,
-    name: 'One&Only Nyungwe House',
+    name: 'One&Only Nyungwe',
     location: 'Nyungwe Forest, Rwanda',
     image: '/hotels/one.png',
     rating: '4.8',
