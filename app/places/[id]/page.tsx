@@ -72,7 +72,7 @@ export default function PlacePage() {
   }
 
   return (
-    <div className="min-h-screen w-[80%] mx-auto mt-20">
+    <div className="min-h-screen w-[80%] mx-auto mt-20 text-start bg-white shadow-md">
       <Head>
         <title>{place.name} | Travel Guide</title>
         <meta name="description" content={place.description}/>
@@ -99,7 +99,7 @@ export default function PlacePage() {
         ))}
       </Slider>
   
-      <div className="max-w-5xl mx-auto px-4 py-12">
+      <div className="max-w-5xl mx-auto px-4 py-12" data-aos="fade-up">
         <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: place.fullContent }}/>
       </div>
     </div>
