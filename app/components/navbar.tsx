@@ -9,6 +9,7 @@ import { BiPhone } from 'react-icons/bi';
 import { Menu, X } from 'lucide-react';
 import useQuoteModal from '../hooks/useQuoteModal';
 import { links } from '../lib/data';
+import Sidebar from './sidebar';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,30 +65,11 @@ export default function Navbar() {
       )}
 
       {/* Slide-in panel */}
-      <div
-        className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
-      >
-        <div className="flex justify-between items-center p-4 border-b">
-          <span className="text-xl font-semibold">Menu</span>
-          <button onClick={() => setIsOpen(false)} aria-label="Close menu">
-            <X size={24} />
-          </button>
-        </div>
-        <div className="flex flex-col p-4 space-y-4">
-          {links.map((link) => (
-            <a
-              key={link.hash}
-              href={link.hash}
-              className="text-gray-700 hover:text-blue-600 text-lg"
-              onClick={() => setIsOpen(false)}
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
-      </div>
+      <Sidebar
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        links={links}
+      />
       </div>
     </nav>
   );

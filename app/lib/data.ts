@@ -32,6 +32,8 @@ export const links = [
   },
 ] as const;
 
+export type Link = typeof links[number];
+
 
 export const accordionData = [
   {
