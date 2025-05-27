@@ -31,28 +31,29 @@ export const newsArticles: NewsArticle[] = [
     id: '2',
     title: 'Top 5 Travel Destinations for Winter 2025',
     snippet: 'Discover breathtaking winter wonderlands. Our experts have curated a list of the top 5 must-visit destinations this winter.',
-    imageUrl: '/hotels/one.png',
+    imageUrl: '/hotels/travel.png',
     date: 'October 24, 2023',
     category: 'Travel Tips',
     author: 'John Smith',
     readMoreUrl: '/news/2',
     fullContent: `
-      <p>As the days grow shorter and a chill fills the air, it's time to plan your winter escape. Our travel experts have scoured the globe to bring you the top 5 destinations that promise an unforgettable winter experience in 2025.</p>
-      <ol class="list-decimal list-inside mt-4 space-y-2">
-        <li><strong>Lapland, Finland:</strong> Experience the magic of the Arctic, meet Santa Claus, witness the Northern Lights, and enjoy thrilling husky sledding.</li>
-        <li><strong>Banff National Park, Canada:</strong> Majestic snow-capped mountains, frozen lakes perfect for ice skating, and world-class ski resorts await.</li>
-        <li><strong>Kyoto, Japan:</strong> Witness serene temples dusted in snow, relax in onsen (hot springs), and savor seasonal Japanese cuisine.</li>
-        <li><strong>Prague, Czech Republic:</strong> A fairytale city in winter, with charming Christmas markets, historic architecture, and cozy cafes.</li>
-        <li><strong>Queenstown, New Zealand:</strong> For those seeking summer in winter, Queenstown offers adventure sports, stunning landscapes, and vibrant nightlife (as it's summer in the Southern Hemisphere).</li>
-      </ol>
-      <p class="mt-4">Each destination offers a unique blend of culture, adventure, and natural beauty, ensuring your winter getaway is nothing short of spectacular.</p>
-    `,
+        <p>As the year winds down and cooler months approach, why not embrace the warmth and wonder of East Africa? Our travel experts have selected the top 5 East African destinations that promise a memorable escape filled with nature, culture, and luxury this winter.</p>
+            <ol class="list-decimal list-inside mt-4 space-y-2">
+                <li><strong>Maasai Mara, Kenya:</strong> Witness the Great Migration, enjoy luxury tented safaris, and experience breathtaking savannah landscapes teeming with wildlife.</li>
+                <li><strong>Zanzibar, Tanzania:</strong> Relax on pristine white-sand beaches, explore the historic Stone Town, and enjoy spice tours in this Indian Ocean paradise.</li>
+                <li><strong>Volcanoes National Park, Rwanda:</strong> Trek through misty mountains to encounter majestic mountain gorillas and soak in the lush rainforest scenery.</li>
+                <li><strong>Bwindi Impenetrable Forest, Uganda:</strong> A UNESCO World Heritage Site offering life-changing gorilla trekking experiences and rich biodiversity.</li>
+                <li><strong>Serengeti National Park, Tanzania:</strong> Discover endless plains, luxurious safari lodges, and iconic African wildlife under vast, starry skies.</li>
+            </ol>
+        <p class="mt-4">Whether you're drawn by wildlife, beaches, or cultural heritage, East Africa offers a truly unforgettable winter retreat filled with adventure and serenity.</p>
+`
+
   },
   {
     id: '3',
     title: 'Sustainable Tourism: Traveling Responsibly',
     snippet: 'Learn how you can make a positive impact on the environment and local communities while exploring the world.',
-    imageUrl: '/hotels/one.png',
+    imageUrl: '/hotels/sustainable.jpeg',
     date: 'October 22, 2023',
     category: 'Guides',
     author: 'Alice Green',
@@ -73,7 +74,7 @@ export const newsArticles: NewsArticle[] = [
     id: '4',
     title: 'Airline Announces New Routes to Exotic Locations',
     snippet: 'Global Airways has just announced an expansion of its routes, connecting more cities to sought-after exotic destinations.',
-    imageUrl: '/hotels/one.png',
+    imageUrl: '/hotels/airlines.png',
     date: 'October 20, 2023',
     category: 'Airlines',
     author: 'Robert Brown',
@@ -88,7 +89,7 @@ export const newsArticles: NewsArticle[] = [
     id: '5',
     title: 'The Ultimate Guide to Packing Light',
     snippet: 'Say goodbye to hefty luggage fees. Master the art of packing light with our comprehensive guide for your next adventure.',
-    imageUrl: '/hotels/one.png',
+    imageUrl: '/hotels/packing.jpg',
     date: 'October 18, 2023',
     category: 'Travel Tips',
     author: 'Emily White',

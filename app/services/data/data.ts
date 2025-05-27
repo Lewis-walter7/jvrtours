@@ -1,25 +1,25 @@
 export const teamMembers = [
     {
       name: "Ataga Chahilu",
-      role: "Alangling Direecter",
+      role: "Managing Director",
       contact: "+254 702813866",
       image: "/jeff.png",
     },
     {
       name: "Reuben Okello",
-      role: "Direector Teor Core ahnt",
+      role: "Director Teor Core ahnt",
       contact: "+254 740100238",
       image: "/reuben.png",
     },
     {
       name: "Vincent Owino",
-      role: "Direector Soperations",
+      role: "Director of operations",
       contact: "+254 768073349",
       image: "/vincent.png", 
     },
     {
       name: "Hassanali Omori",
-      role: "Direector Adminifeteration",
+      role: "Director of Administration",
       contact: "+254 725412541",
       image: "/hassan.png",
     },

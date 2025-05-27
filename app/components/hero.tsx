@@ -192,6 +192,23 @@ const HeroSection = () => {
             <span className="relative font-bold">Search Availability</span>
           </a>
         </div>
+        <div className="absolute bottom-10 right-10 z-30 bg-white p-4 rounded-lg shadow-xl w-[300px] max-w-full">
+          <div className="flex items-center gap-3 mb-2">
+            <div className="w-5 h-5 bg-red-500 text-white text-sm font-bold flex items-center justify-center rounded-full">
+              i
+            </div>
+            <h4 className="font-semibold text-gray-800">
+              Sightseeing program
+              <span className="ml-2 inline-block bg-green-500 text-white text-xs px-2 py-0.5 rounded">
+                H
+              </span>
+            </h4>
+          </div>
+          <p className="text-sm text-gray-600">
+            This tour takes 8 to 13 hours. The length of the hiking part of the
+            route is approximately 8,900 meters.
+          </p>
+        </div>
       </div>
     </div>
   );
