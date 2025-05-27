@@ -67,8 +67,7 @@ const RecommendedHotels: React.FC<RecommendedHotelsProps> = ({ hotels }) => {
                   decoding="async"
                   className="overflow-hidden h-full w-full transition-all duration-300 object-cover group-hover:scale-110"
                   style={{ color: 'transparent' }}
-                  srcSet={`${hotel.image}&w=640&q=75 1x, ${hotel.image}&w=1080&q=75 2x`}
-                  src={`${hotel.image}&w=1080&q=75`}
+                  src={hotel.image}
                 />
               </div>
               <div>
